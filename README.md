@@ -67,11 +67,12 @@ Built on a modular pipeline designed for scalability and rapid inference across 
 
 1. **Initialize the Environment:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
-   cd YOUR_REPOSITORY
+   git clone https://github.com/Dalliya/transformer-latent-emotion-space.git
+cd transformer-latent-emotion-space
    pip install -r requirements.txt
 
-   2. **Engage the Pipeline:**
+   
+2. **Engage the Pipeline:**
    Execute the main orchestrator script to initiate the analysis:
    ```bash
    python src/main.py
