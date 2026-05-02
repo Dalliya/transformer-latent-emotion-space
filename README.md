@@ -37,12 +37,21 @@ To make the 768-D space comprehensible to the human eye, the engine utilizes **U
 
 ---
 
+---
+
 ## 👁️ The Matrix UI: Interactive Visual Audit
 The true power of **[S-E-M-A-N-T-I-C]** lies in its custom rendering engine. The data is visualized through a bespoke, dual-panel Matrix-styled dashboard.
 
-> 🌐 **[CLICK HERE TO LAUNCH THE INTERACTIVE UMAP DASHBOARD](https://Dalliya.github.io/transformer-latent-emotion-space/data/processed/umap_matrix_comparative.html)**
+<div align="center">
+  <a href="https://Dalliya.github.io/transformer-latent-emotion-space/data/processed/umap_matrix_comparative.html">
+    <img src="data/processed/preview.png" alt="Click to open Interactive Matrix UI" width="100%"/>
+  </a>
+  <br>
+  <i>👆 <b>CLICK THE IMAGE ABOVE</b> to explore the interactive neon dashboard with live tooltips and 1500+ data points. 👆</i>
+</div>
 
 *(If viewing offline, download and open `data/processed/umap_matrix_comparative.html` in any modern web browser).*
+
 
 ### Decoding the Visualization:
 * **The Coordinates (Z1 / Z2):** Proximity dictates contextual similarity. Points grouped together share deep semantic meaning, regardless of the specific words used.
