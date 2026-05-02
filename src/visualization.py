@@ -152,7 +152,7 @@ def create_neon_comparative_umap(embeddings: np.ndarray, df: pd.DataFrame):
                 size=6.5, opacity=0.85,
                 line=dict(width=0.5, color='#FFFFFF') 
             ),
-            name=f"{polarity} (Human)",
+            name=polarity,
             legendgroup=polarity,
             showlegend=True,
             hovertext=subset_gt.apply(lambda row: build_hover_text(row, 'Human_Polarity'), axis=1),
