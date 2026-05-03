@@ -145,7 +145,7 @@ To overcome the limitations of Python’s garbage collection on an **8GB RAM** s
 
 The pipeline is designed for "One-Click" orchestration, handling everything from data ingestion to manifold rendering.
 
-### 1. Environment Initialization
+1. **Environment Initialization:**
 It is recommended to use a virtual environment to ensure dependency isolation.
 ```bash
 # Clone the repository
@@ -160,10 +160,12 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv pip install -r requirements.txt
 
    
-### 2. Deploying the Pipeline:
-   Execute the main orchestrator to initiate the full analytical audit:
-   ```bash
-   python src/main.py
+2. **Deploying the Pipeline:**
+Execute the main orchestrator to initiate the full analytical audit:
+
+```bash
+python src/main.py
+
 What happens under the hood:
 
 Hardware Autopicker: The engine detects your hardware and initializes MPS (Metal) for Apple Silicon, CUDA for NVIDIA, or CPU as a fallback.
