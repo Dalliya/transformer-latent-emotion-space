@@ -160,7 +160,7 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv pip install -r requirements.txt
 
    
-2. **Deploying the Pipeline:**
+### 2. Deploying the Pipeline:
    Execute the main orchestrator to initiate the full analytical audit:
    ```bash
    python src/main.py
