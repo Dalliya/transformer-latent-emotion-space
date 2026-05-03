@@ -145,7 +145,7 @@ To overcome the limitations of Python’s garbage collection on an **8GB RAM** s
 
 The pipeline is designed for "One-Click" orchestration, handling everything from data ingestion to manifold rendering.
 
-###1. Environment Initialization:
+### 1. Environment Initialization
 It is recommended to use a virtual environment to ensure dependency isolation.
 
 ```bash
@@ -158,25 +158,25 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 
 # Install high-performance dependencies
-uv pip install -r requirements.txt ```
+uv pip install -r requirements.txt
+```
 
-
-###2. Deploying the Pipeline: 
+### 2. Deploying the Pipeline
 Execute the main orchestrator to initiate the full analytical audit:
 
 ```bash
-python src/main.py ```
-
+python src/main.py
+```
 
 **What happens under the hood:**
 
-Hardware Autopicker: The engine detects your hardware and initializes MPS (Metal) for Apple Silicon, CUDA for NVIDIA, or CPU as a fallback.
-
-Atomic Subprocessing: The orchestrator will trigger each module as a separate process to maintain a clean memory state (optimized for 8GB RAM).
-
-Output: Once complete, navigate to data/processed/umap_matrix_comparative.html to view the interactive dashboard.
+* **Hardware Autopicker:** The engine detects your hardware and initializes `MPS` (Metal) for Apple Silicon, `CUDA` for NVIDIA, or `CPU` as a fallback.
+* **Atomic Subprocessing:** The orchestrator will trigger each module as a separate process to maintain a clean memory state (optimized for **8GB RAM**).
+* **Output:** Once complete, navigate to `data/processed/umap_matrix_comparative.html` to view the interactive dashboard.
 
 <div align="center">
+
+---
 
 ### 👩‍💻 Dariia Zhdanova
 **ML Developer | Architect of Semantic Intelligence**
@@ -190,7 +190,8 @@ Output: Once complete, navigate to data/processed/umap_matrix_comparative.html t
 
 ---
 
-> **Principal Research Insight:** > "This audit proves that blind algorithmic domain transfer—especially in zero-shot environments—is a dangerous architectural illusion. The 'Semantic Chasm' found in this project demonstrates that without transparent topology and human-centric validation, machine logic remains disconnected from linguistic reality. My mission is to build the tools that reveal this threshold."
+> **Principal Research Insight:**
+> "This audit proves that blind algorithmic domain transfer—especially in zero-shot environments—is a dangerous architectural illusion. The 'Semantic Chasm' found in this project demonstrates that without transparent topology and human-centric validation, machine logic remains disconnected from linguistic reality. My mission is to build the tools that reveal this threshold."
 
 <br>
 
@@ -198,6 +199,8 @@ Output: Once complete, navigate to data/processed/umap_matrix_comparative.html t
 [LinkedIn](https://www.linkedin.com/in/dariia-z-b7146223a) • [GitHub (@Dalliya)](https://github.com/Dalliya) • [Portfolio](https://github.com/Dalliya)
 
 <br>
+
+</div>
 
 <img src="https://img.shields.io/badge/Focus-Interpretability-00FF41?style=flat-square" /> <img src="https://img.shields.io/badge/Focus-Topology-08F7FE?style=flat-square" /> <img src="https://img.shields.io/badge/Focus-Optimization-FF003C?style=flat-square" />
 
