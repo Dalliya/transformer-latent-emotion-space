@@ -139,6 +139,11 @@ To overcome the limitations of Python’s garbage collection on an **8GB RAM** s
 * **Stack:** `Plotly` + `UMAP-learn`.
 * **Features:** Generates unescaped HTML tooltips for zero-latency auditing and implements dynamic HSV neon mapping for the 28-class taxonomy.
 
+#### 🌐 `Inference API` (FastAPI & Docker)
+* **Function:** Production-ready REST endpoint for real-time 12th-layer `[CLS]` extraction.
+* **Architecture:** Deployed via **FastAPI** and **Uvicorn**, packaged with **Docker**. Bypasses the classification head to expose raw 768-D latent representations for downstream vector search.
+* **Local Deployment:** `uv run uvicorn api:app --reload` (Swagger UI at `http://localhost:8000/docs`).
+
 ---
 
 ## 🚀 Execution Guide
@@ -173,6 +178,17 @@ python src/main.py
 * **Hardware Autopicker:** The engine detects your hardware and initializes `MPS` (Metal) for Apple Silicon, `CUDA` for NVIDIA, or `CPU` as a fallback.
 * **Atomic Subprocessing:** The orchestrator will trigger each module as a separate process to maintain a clean memory state (optimized for **8GB RAM**).
 * **Output:** Once complete, navigate to `data/processed/umap_matrix_comparative.html` to view the interactive dashboard.
+
+
+### 2. Running the Inference API
+
+To start the real-time vector extraction service:
+
+```bash
+uv run uvicorn api:app --reload
+```
+
+Navigate to http://localhost:8000/docs to interact with the API via Swagger UI.
 
 <div align="center">
 
